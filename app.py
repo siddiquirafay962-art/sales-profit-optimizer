@@ -123,7 +123,7 @@ with st.sidebar:
     st.divider()
     st.caption('Designed for university project demonstration. All amounts in Pakistani rupees (Rs.).')
 
-tab1, tab2, tab3, tab4 = st.tabs(['📈 Dashboard', '✏️ Edit Products', '🎯 Optimization', 'ℹ️ Model Explanation'])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["Dashboard", "Edit Products", "Optimization", "Model Explanation", "What-If Analysis"])
 try:
     data = normalize(st.session_state.products)
 except ValueError as err:
