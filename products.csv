@@ -1,0 +1,50 @@
+﻿Product,Selling Price,Unit Cost,Sales Quantity,Working Time,Raw Material,Maximum Demand
+Chocolate Cake,1800,1050,200,3,2.5,60
+Vanilla Cake,1500,900,250,2.5,2.2000000000000002,70
+Red Velvet Cake,2500,1500,35,3.5,2.8,50
+Cheesecake,2000,1150,32,3,2.6,45
+Brownie,400,190,95,0.7,0.5,140
+Muffin,300,140,110,0.5,0.4,160
+Donut,250,110,135,0.4,0.3,200
+Croissant,350,170,90,0.6,0.4,130
+Chocolate Cookie,180,75,150,0.3,0.2,220
+Cupcake,280,125,125,0.4,0.3,190
+Chicken Pizza,1400,780,72,2,1.8,100
+Beef Pizza,1600,900,60,2.2000000000000002,2,85
+Cheese Pizza,1200,650,68,1.8,1.6,95
+Veggie Pizza,1000,520,55,1.6,1.5,80
+Pepperoni Pizza,1500,820,50,2,1.8,75
+Chicken Burger,650,350,105,1,0.9,140
+Beef Burger,750,410,90,1.1000000000000001,1,125
+Zinger Burger,800,430,85,1.2,1,120
+Cheese Burger,700,380,78,1,0.9,110
+Double Burger,950,520,65,1.4,1.2,90
+Chicken Sandwich,600,310,82,0.9,0.8,120
+Club Sandwich,850,450,70,1.3,1.1000000000000001,100
+Grilled Sandwich,650,330,65,1,0.9,90
+Chicken Wrap,550,280,95,0.8,0.7,130
+Beef Wrap,650,340,75,0.9,0.8,100
+Chicken Shawarma,500,250,115,0.7,0.7,150
+Beef Shawarma,600,310,90,0.8,0.8,120
+Chicken Roll,450,220,100,0.7,0.6,140
+Spring Roll,350,160,80,0.5,0.4,110
+Chicken Wings,900,480,55,1.4,1.2,80
+Chicken Nuggets,650,330,65,1,0.9,90
+French Fries,400,180,125,0.6,0.5,180
+Loaded Fries,650,320,85,0.9,0.8,120
+Pasta Alfredo,900,470,65,1.4,1.2,90
+Chicken Pasta,850,440,72,1.3,1.1000000000000001,100
+Lasagna,1100,580,48,1.8,1.5,70
+Chicken Biryani,750,370,105,1.2,1,150
+Beef Biryani,900,460,80,1.4,1.2,110
+Chicken Rice Bowl,700,340,90,1.1000000000000001,0.9,125
+Beef Rice Bowl,800,410,72,1.2,1,100
+Chicken Steak,1400,780,55,2,1.7,75
+Beef Steak,1900,1100,42,2.5,2.1,60
+Garlic Bread,400,180,85,0.6,0.5,120
+Chicken Soup,450,210,75,0.7,0.6,100
+Fresh Juice,450,190,115,0.5,0.5,160
+Milkshake,550,240,95,0.6,0.5,130
+Ice Cream,350,140,120,0.4,0.4,170
+Coffee,300,100,140,0.3,0.2,200
+Tea,190,55,165,0.2,0.15,230
