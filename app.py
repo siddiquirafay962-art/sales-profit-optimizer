@@ -8,8 +8,8 @@ import streamlit as st
 from scipy.optimize import Bounds, LinearConstraint, milp
 
 st.set_page_config(page_title="Sales & Profit Optimizer", page_icon="📊", layout="wide")
-st.markdown("**Developed By: Mohammad Rafay Siddiqui**")
-st.caption("Department of Mathematics | University of Karachi")
+st.markdown("**Developed By: Muhammad Rafay Siddiqui**")
+st.caption("Rafay siddiqui | Department of Mathematics | University of Karachi")
 BASE = Path(__file__).resolve().parent
 FIELDS = ['Product', 'Selling Price', 'Unit Cost', 'Sales Quantity', 'Working Time', 'Raw Material', 'Maximum Demand']
 NUMERIC = FIELDS[1:]
