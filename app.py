@@ -231,3 +231,15 @@ with tab4:
     st.warning('The original workbook’s summary ranges are not completely consistent. This app recalculates directly from all imported products rather than copying the older summary totals. Results use a new optimization run, not the old Excel Solver answer report.')
 st.divider()
 st.caption("© 2026 | Developed by Mohammad Rafay Siddiqui")
+st.divider()
+st.subheader("Business Insights")
+
+st.info(
+    "This application analyzes product sales, costs, "
+    "revenue and profit to support business decisions."
+)
+
+st.markdown("### Business Performance Indicators")
+st.write("Revenue = Selling Price × Sales Quantity")
+st.write("Profit = Revenue − Total Cost")
+st.write("Profit Margin = (Profit / Revenue) × 100")
