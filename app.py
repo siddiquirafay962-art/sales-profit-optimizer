@@ -241,5 +241,64 @@ st.markdown("### Business Performance Indicators")
 st.write("Revenue = Selling Price × Sales Quantity")
 st.write("Profit = Revenue − Total Cost")
 st.write("Profit Margin = (Profit / Revenue) × 100")
+with tab5:
+    st.header("What-If Analysis")
+    st.write("Change selling price and sales quantity to analyze profit.")
+
+    product_name = st.selectbox(
+        "Select Product",
+        report["Product"].tolist()
+    )
+
+    product = report[
+        report["Product"] == product_name
+    ].iloc[0]
+
+    price = st.number_input(
+        "New Selling Price (Rs.)",
+        min_value=0.0,
+        value=float(product["Selling Price"]),
+        step=10.0
+    )
+
+    quantity = st.number_input(
+        "New Sales Quantity",
+        min_value=0,
+        value=int(product["Sales Quantity"]),
+        step=1
+    )
+
+    revenue = price * quantity
+    cost = float(product["Unit Cost"]) * quantity
+    profit = revenue - cost
+    old_profit = float(product["Profit"])
+
+    c1, c2, c3 = st.columns(3)
+    c1.metric("New Revenue", f"Rs. {revenue:,.0f}")
+    c2.metric("New Total Cost", f"Rs. {cost:,.0f}")
+    c3.metric(
+        "New Profit",
+        f"Rs. {profit:,.0f}",
+        delta=f"Rs. {profit - old_profit:,.0f}"
+    )
+
+    comparison = pd.DataFrame({
+        "Scenario": ["Original", "What-If"],
+        "Profit": [old_profit, profit]
+    })
+
+    fig = px.bar(
+        comparison,
+        x="Scenario",
+        y="Profit",
+        color="Scenario",
+        title="Profit Comparison"
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+    st.info(
+        f"Profit difference: Rs. {profit - old_profit:,.0f}"
+    )
 st.divider()
 st.caption("© 2026 | Developed by Mohammad Rafay Siddiqui")
