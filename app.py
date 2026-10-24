@@ -8,6 +8,8 @@ import streamlit as st
 from scipy.optimize import Bounds, LinearConstraint, milp
 
 st.set_page_config(page_title="Sales & Profit Optimizer", page_icon="📊", layout="wide")
+st.markdown("**Developed By: Mohammad Rafay Siddiqui**")
+st.caption("Department of Mathematics | University of Karachi")
 BASE = Path(__file__).resolve().parent
 FIELDS = ['Product', 'Selling Price', 'Unit Cost', 'Sales Quantity', 'Working Time', 'Raw Material', 'Maximum Demand']
 NUMERIC = FIELDS[1:]
@@ -227,3 +229,5 @@ with tab4:
     st.write('Optional limits: total working time and raw material consumption are also constrained if enabled.')
     st.info('Revenue = price × quantity; total cost = unit cost × quantity; profit = revenue − cost. Overall profit margin = profit ÷ revenue × 100.')
     st.warning('The original workbook’s summary ranges are not completely consistent. This app recalculates directly from all imported products rather than copying the older summary totals. Results use a new optimization run, not the old Excel Solver answer report.')
+st.divider()
+st.caption("© 2026 | Developed by Mohammad Rafay Siddiqui")
